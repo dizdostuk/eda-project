@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eda</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div class="main-body">
-        <div class="nav-wrapper">
-            <div class="nav">
-                <div class="logo">
-                    <img src="./img/logo.png" alt="Logo">
-                </div>
-                <a href="#" class="menu-link">Рецепты</a>
-                <a href="#" class="menu-link">Продукты</a>
-                <a href="#" class="menu-link">Как приготовить</a>
-                <a href="#" class="menu-link">Кулинарная книга</a>
-                <a href="#" class="menu-link">Здоровье</a>
-                <a href="#" class="menu-link">Авторы</a>
-            </div>
+        <sidebar class="nav-wrapper">
+            <nav class="nav">
+                <a href="/"><img src="./img/logo.png" alt="Logo"></a>
+                
+                <ul class="nav-list">
+                    <li><a href="#" class="menu-link">Рецепты</a></li>
+                    <li><a href="#" class="menu-link">Продукты</a></li>
+                    <li><a href="#" class="menu-link">Как приготовить</a></li>
+                    <li><a href="#" class="menu-link">Кулинарная книга</a></li>
+                    <li><a href="#" class="menu-link">Здоровье</a></li>
+                    <li><a href="#" class="menu-link">Авторы</a></li>
+                </ul> 
+            </nav>
             <div class="nav_footer">
-                <div class="nav_languages">
-                    <a href="#" class="ru active_language">RU</a>
-                    <a href="#" class="en">EN</a>
-                </div>
-                <div class="nav_socials">
-                    <a href="https://vk.com/" class="vk"><img src="./img/vk.png" alt="VK"></a>
-                    <a href="https://facebook.com/" class="fb"><img src="./img/fb.png" alt="FB"></a>
-                    <a href="https://instagram.com/" class="inst"><img src="./img/inst.png" alt="Instagram"></a>
-                </div>
+                <ul class="nav_languages-list">
+                    <li><a href="#" class="ru active_language">RU</a></li>
+                    <li><a href="#" class="en">EN</a></li>
+                </ul>
+                <ul class="nav_social-list">
+                    <li><a href="https://vk.com/" class="vk"><img src="./img/vk.png" alt="VK"></a></li>
+                    <li><a href="https://facebook.com/" class="fb"><img src="./img/fb.png" alt="FB"></a></li>
+                    <li><a href="https://instagram.com/" class="inst"><img src="./img/inst.png" alt="Instagram"></a></li>
+                </ul>
             </div>
-        </div>
+        </sidebar>
 
-        <div class="content">
+        <main class="content">
             <div class="content_wrapper">
                 <div class="content__header">
                     <div class="header__search">
@@ -92,7 +93,7 @@
     
     
             </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>

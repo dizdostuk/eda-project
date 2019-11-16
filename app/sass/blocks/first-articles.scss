@@ -1,0 +1,39 @@
+.main_content {
+  width: 100%;
+  height: auto;
+}
+.main-recept-a {
+  grid-area: main-recept;
+  background-color: green;
+}
+.main-recept-b {
+  grid-area: main-recept-2;
+  background-color: orange;
+}
+.main-recept-c {
+  grid-area: left-main-recept;
+}
+.main-recept-d {
+  grid-area: small-recept-1;
+}
+.main-recept-e {
+  grid-area: small-recept-2;
+}
+.main-recept-f {
+  grid-area: small-recept-3;
+}
+.main-recept-g {
+  grid-area: small-recept-4;
+}
+.main-recept-h {
+  grid-area: right-main-recept;
+}
+.recept_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "main-recept main-recept main-recept-2 main-recept-2"
+      "left-main-recept left-main-recept small-recept-1 small-recept-2"
+      "small-recept-3 small-recept-4 right-main-recept right-main-recept";
+}
