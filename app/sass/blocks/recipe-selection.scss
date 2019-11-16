@@ -1,0 +1,38 @@
+.select_form_search {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  grid-row-gap: 5px;
+  width: 100%;
+}
+.btns {
+  align-self: center;
+  margin-bottom: 10px;
+}
+.nav_btn {
+  padding: 10px 20px;
+  border: 1px solid #cdcdcd;
+  color: #5b5b5b;
+  font-size: 14px;
+}
+.nav_btn:first-child {
+  margin-right: 10px;
+}
+.btn_active,
+.nav_btn:hover {
+  background-color: #c7b084;
+  color: #fff;
+}
+
+.selections {
+  display: flex;
+}
+.select {
+  width: 155px;
+  padding: 10px 0;
+  border: 1px solid #dedede;
+  color: #5b5b5b;
+  outline: none;
+  font-size: 14px;
+}

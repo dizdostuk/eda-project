@@ -1,0 +1,67 @@
+@import "./fonts";
+@import "./vars";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1.new-recept-header {
+  font-family: 'FiraSansEC', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+h1.header-section {
+  font-family: 'FiraSansEC', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #5b5b5b;
+  margin-top: 20px;
+}
+
+h2.recept-title {
+  font-family: 'FiraSansEC', serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p.recept-descr {
+  font-family: 'FiraSansEC', serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  font-family: 'FiraSansEC', serif;
+  font-weight: 400;
+  color: #efefef;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+@import "./blocks/sidebar.scss";
+@import "./blocks/content-header.scss";
+
+/**************************** Content ****************************/
+.content {
+  margin-left: 170px;
+}
+.content_wrapper {
+  padding: 25px 48px;
+}
+
+@import "./blocks/content-header.scss";
+@import "./blocks/section-header.scss";
+@import "./blocks/recipe-selection.scss";
+
+/******************* Main Content **********************/
+@import "./blocks/first-articles.scss";

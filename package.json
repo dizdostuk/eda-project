@@ -1,0 +1,26 @@
+{
+  "name": "eda-project",
+  "version": "1.0.0",
+  "description": "Eda project is a blog about reciepes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dizdostuk/eda-project.git"
+  },
+  "author": "Ulan Zhusupov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dizdostuk/eda-project/issues"
+  },
+  "homepage": "https://github.com/dizdostuk/eda-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
