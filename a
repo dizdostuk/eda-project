@@ -1,0 +1,26 @@
+[33mcommit 05782116578fbbe4e32601cf10965cead3ed6279[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/2_00AM[m[33m, [m[1;32m2_00AM[m[33m)[m
+Author: Ulanbek Zhusupov <diz.dostuk@yandex.ru>
+Date:   Sun Nov 17 01:59:47 2019 +0300
+
+    Added gulp automatization and splitted css to other blocks
+
+[33mcommit 081fc88fb56dc2a326f19a75670fd1f9ef241b00[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 7686988 0740bb8
+Author: Ulan Jusupov <diz.dostuk@yandex.ru>
+Date:   Fri Nov 15 21:22:15 2019 +0300
+
+    Merge pull request #1 from dizdostuk/working
+    
+    Added TT
+
+[33mcommit 0740bb88fa3a4814c8f233ed333a25427b4bbd9b[m
+Author: Ulan <diz.dostuk@yandex.ru>
+Date:   Fri Nov 15 21:19:56 2019 +0300
+
+    Added TT
+
+[33mcommit 76869881cfed08443d0b4aac9dd315bcb8853bf8[m
+Author: Ulan <diz.dostuk@yandex.ru>
+Date:   Sat Jun 29 23:38:11 2019 +0600
+
+    Started new project

@@ -1,38 +1,74 @@
-.select_form_search {
-  margin-top: 20px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: space-between;
-  grid-row-gap: 5px;
-  width: 100%;
-}
-.btns {
-  align-self: center;
-  margin-bottom: 10px;
-}
-.nav_btn {
-  padding: 10px 20px;
-  border: 1px solid #cdcdcd;
-  color: #5b5b5b;
-  font-size: 14px;
-}
-.nav_btn:first-child {
-  margin-right: 10px;
-}
-.btn_active,
-.nav_btn:hover {
-  background-color: #c7b084;
-  color: #fff;
-}
+@import "../vars";
 
+.select__recipe {
+  margin: 15px 0;
+}
+.recipe__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--success {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+}
 .selections {
   display: flex;
+  flex-wrap: wrap;
 }
 .select {
-  width: 155px;
+  width: 140px;
   padding: 10px 0;
+  margin-left: -1px;
   border: 1px solid #dedede;
-  color: #5b5b5b;
   outline: none;
-  font-size: 14px;
+
+  color: #5b5b5b;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1309px) {
+  .select {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .select {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .select {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .recipe__form__btn {
+    width: 100%;
+    margin-right: 0;
+  }
 }
