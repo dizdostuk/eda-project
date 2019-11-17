@@ -9,72 +9,76 @@
 </head>
 <body>
     <div class="main-body">
-        <sidebar class="nav-wrapper">
-            <nav class="nav">
+        <sidebar class="sidebar">
+            <nav class="navbar">
                 <a href="/"><img src="./img/logo.png" alt="Logo"></a>
                 
-                <ul class="nav-list">
-                    <li><a href="#" class="menu-link">Рецепты</a></li>
-                    <li><a href="#" class="menu-link">Продукты</a></li>
-                    <li><a href="#" class="menu-link">Как приготовить</a></li>
-                    <li><a href="#" class="menu-link">Кулинарная книга</a></li>
-                    <li><a href="#" class="menu-link">Здоровье</a></li>
-                    <li><a href="#" class="menu-link">Авторы</a></li>
+                <ul class="navbar-list">
+                    <li><a href="#">Рецепты</a></li>
+                    <li><a href="#">Продукты</a></li>
+                    <li><a href="#">Как приготовить</a></li>
+                    <li><a href="#">Кулинарная книга</a></li>
+                    <li><a href="#">Здоровье</a></li>
+                    <li><a href="#">Авторы</a></li>
                 </ul> 
             </nav>
-            <div class="nav_footer">
-                <ul class="nav_languages-list">
-                    <li><a href="#" class="ru active_language">RU</a></li>
-                    <li><a href="#" class="en">EN</a></li>
+            <div class="sidebar__footer">
+                <ul class="language__list">
+                    <li><a href="#" class="language__ru language--active">RU</a></li>
+                    <li><a href="#" class="language__en">EN</a></li>
                 </ul>
-                <ul class="nav_social-list">
-                    <li><a href="https://vk.com/" class="vk"><img src="./img/vk.png" alt="VK"></a></li>
-                    <li><a href="https://facebook.com/" class="fb"><img src="./img/fb.png" alt="FB"></a></li>
-                    <li><a href="https://instagram.com/" class="inst"><img src="./img/inst.png" alt="Instagram"></a></li>
+                <ul class="social__list">
+                    <li><a href="https://vk.com/" class="social__vk"><img src="./img/vk.png" alt="VK"></a></li>
+                    <li><a href="https://facebook.com/" class="social__fb"><img src="./img/fb.png" alt="FB"></a></li>
+                    <li><a href="https://instagram.com/" class="social__inst"><img src="./img/inst.png" alt="Instagram"></a></li>
                 </ul>
             </div>
         </sidebar>
 
         <main class="content">
-            <div class="content_wrapper">
-                <div class="content__header">
-                    <div class="header__search">
-                        <input type="text" class="header__search__input" placeholder="Поиск по сайту">
-                        <button class="search-btn">Hello</button>
-                    </div>
-                    <div class="header__notification">
-                        <a href="#" class="notify"><img src="./img/bell.png" alt="Bell"></a>
-                        <a href="#" class="user-icon"><img src="./img/user-icon.png" alt="User icon"></a>
-                    </div>
+            <div class="content__header">
+                <button class="menu__btn"><span></span></button>
+                <p class="header__search">
+                    <input type="text" class="header__search__input" placeholder="Поиск по сайту">
+                    <button class="search-btn">Hello</button>
+                </p>
+                <div class="header__notification">
+                    <a href="#" class="notify"><img src="./img/bell.png" alt="Bell"></a>
+                    <a href="#" class="user-icon"><img src="./img/user-icon.png" alt="User icon"></a>
                 </div>
+            </div>
+            <div class="container">
                 <div class="header_text">
                     <div class="leaf"></div>
                     <h1 class="header-section">Подбор рецептов</h1>
                 </div>
-                <div class="select_form_search">
-                    <div class="btns">
-                        <a href="#" class="nav_btn">Ингредиенты, детали</a>
-                        <a href="#" class="nav_btn btn_active">Подобрать рецепты</a>
-                    </div>
-                    <div class="selections">
-                        <select class="select" name="select1" id="select1">
-                            <option value="Выпечка и десерты">Выпечка и десерты</option>
-                        </select>
-                        <select class="select" name="select1" id="select1">
-                            <option value="Выпечка и десерты">Выпечка и десерты</option>
-                        </select>
-                        <select class="select" name="select1" id="select1">
-                            <option value="Выпечка и десерты">Выпечка и десерты</option>
-                        </select>
-                        <select class="select" name="select1" id="select1">
-                            <option value="Выпечка и десерты">Выпечка и десерты</option>
-                        </select>
-                        <select class="select" name="select1" id="select1">
-                            <option value="Выпечка и десерты">Выпечка и десерты</option>
-                        </select>
-                    </div>
+
+                <section class="select__recipe">
+                    <form action="get" class="recipe__form">
+                        <div class="selections">
+                            <select class="select" name="select1" id="select1">
+                                <option value="Выпечка и десерты">Выпечка и десерты</option>
+                            </select>
+                            <select class="select" name="select1" id="select1">
+                                <option value="Выпечка и десерты">Любое блюдо</option>
+                            </select>
+                            <select class="select" name="select1" id="select1">
+                                <option value="Выпечка и десерты">Любая кухня</option>
+                            </select>
+                            <select class="select" name="select1" id="select1">
+                                <option value="Выпечка и десерты">Любое меню</option>
+                            </select>
+                            <select class="select" name="select1" id="select1">
+                                <option value="Выпечка и десерты">Сложность</option>
+                            </select>
+                        </div>
+                        <p class="recipe__form__btns">
+                            <button href="#" class="recipe__form__btn">Ингредиенты, детали</button>
+                            <button class="recipe__form__btn recipe__form__btn--success">Подобрать рецепты</button>
+                        </p>
+                    </form>
                     
-                </div>
+                </section>
     
                 <div class="main_content">
                     <div class="recept_grid">
@@ -95,5 +99,14 @@
             </div>
         </main>
     </div>
+
+    <script>
+        let sidebar = document.querySelector('.sidebar');
+        let button = document.querySelector('.menu__btn');
+
+        button.onclick = () => {
+            sidebar.classList.toggle('sidebar--x0');
+        }
+    </script>
 </body>
 </html>
