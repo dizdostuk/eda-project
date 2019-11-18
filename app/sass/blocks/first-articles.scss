@@ -1,2 +1,13 @@
 
+.recept_grid {
+  display: flex;
+  flex-direction: column;
+}
 
+.grid__first {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: (960px / 2) - 10px;
+  }
+}
