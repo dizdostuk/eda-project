@@ -49,6 +49,13 @@ a:hover {
   margin: 0 auto;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+.mt-20 {
+  margin-top: -20px;
+}
+
 @import "./blocks/sidebar.scss";
 @import "./blocks/content-header.scss";
 
@@ -76,7 +83,6 @@ a:hover {
 /******************* Header of section *****************/
 .header_text {
   text-align: center;
-  margin-top: -20px;
 }
 .leaf {
   display: flex;
@@ -106,3 +112,5 @@ a:hover {
 
 /******************* Main Content **********************/
 @import "./blocks/first-articles.scss";
+// Recipe tabs
+@import "./blocks/recipe-tabs.scss";
