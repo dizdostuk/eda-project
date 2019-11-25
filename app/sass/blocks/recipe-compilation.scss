@@ -1,0 +1,38 @@
+@import "../mixins";
+@import "../fonts";
+
+.compilation {
+  margin-top: 45px;
+  &__list {
+    @include list();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    width: 268px;
+    margin: 0 1%;
+    margin-bottom: 1%;
+    position: relative;    
+  }
+  &__title {
+    position: absolute;
+    padding: 0 75px;
+    bottom: 40px;
+
+    font-family: 'FiraSansEC';
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.author {
+  margin-top: 40px;
+  &__list {
+    @include list();
+    display: flex;
+  }
+}
