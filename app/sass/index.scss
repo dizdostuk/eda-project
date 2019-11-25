@@ -49,11 +49,27 @@ a:hover {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.container-fool {
+  width: 100%;
+}
+
 .mt20 {
   margin-top: 20px;
 }
 .mt-20 {
   margin-top: -20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  visibility: hidden;
 }
 
 @import "./blocks/sidebar.scss";
@@ -70,10 +86,6 @@ a:hover {
 @media screen and (max-width: 1024px) {
   .content {
     margin-left: 0;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -114,3 +126,7 @@ a:hover {
 @import "./blocks/first-articles.scss";
 // Recipe tabs
 @import "./blocks/recipe-tabs.scss";
+// Recipe compilation
+@import "./blocks/recipe-compilation.scss";
+
+@import "./blocks/mail-registration.scss";

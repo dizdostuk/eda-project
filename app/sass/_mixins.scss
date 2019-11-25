@@ -1,5 +1,12 @@
+@import "./fonts";
+
 @mixin list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin  firaRegular {
+  font-family: 'FiraSansEC';
+  font-weight: 400;
 }
