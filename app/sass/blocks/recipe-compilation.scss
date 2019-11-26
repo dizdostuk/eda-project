@@ -10,10 +10,13 @@
     justify-content: center;
   }
   &__item {
-    width: 268px;
-    margin: 0 1%;
-    margin-bottom: 1%;
-    position: relative;    
+    width: 238px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    position: relative;
+    img {
+      width: 100%;
+    }  
   }
   &__title {
     position: absolute;
