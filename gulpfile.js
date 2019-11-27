@@ -45,18 +45,18 @@ gulp.task('scripts', function() {
 });
 
 // Responsive Images
-var quality = 80; // Responsive images quality
+var quality = 95; // Responsive images quality
 
 // Produce @1x images
-gulp.task('img-responsive-1x', async function() {
-	return gulp.src('app/img/_src/**/*.{png,jpg,jpeg,webp,raw}')
-		.pipe(newer('app/img/@1x'))
-		.pipe(responsive({
-			'**/*': { width: '50%', quality: quality }
-		})).on('error', function (e) { console.log(e) })
-		.pipe(rename(function (path) {path.extname = path.extname.replace('jpeg', 'jpg')}))
-		.pipe(gulp.dest('app/img/@1x'))
-});
+// gulp.task('img-responsive-1x', async function() {
+// 	return gulp.src('app/img/_src/**/*.{png,jpg,jpeg,webp,raw}')
+// 		.pipe(newer('app/img/@1x'))
+// 		.pipe(responsive({
+// 			'**/*': { width: '50%', quality: quality }
+// 		})).on('error', function (e) { console.log(e) })
+// 		.pipe(rename(function (path) {path.extname = path.extname.replace('jpeg', 'jpg')}))
+// 		.pipe(gulp.dest('app/img/@1x'))
+// });
 // Produce @2x images
 gulp.task('img-responsive-2x', async function() {
 	return gulp.src('app/img/_src/**/*.{png,jpg,jpeg,webp,raw}')
@@ -67,7 +67,7 @@ gulp.task('img-responsive-2x', async function() {
 		.pipe(rename(function (path) {path.extname = path.extname.replace('jpeg', 'jpg')}))
 		.pipe(gulp.dest('app/img/@2x'))
 });
-gulp.task('img', gulp.series('img-responsive-1x', 'img-responsive-2x', bsReload));
+gulp.task('img', gulp.series('img-responsive-2x', bsReload));
 
 // Clean @*x IMG's
 gulp.task('cleanimg', function() {
