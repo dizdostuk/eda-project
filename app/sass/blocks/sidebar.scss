@@ -79,36 +79,7 @@
 
 .social__list {
   @include list();
-  width: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.social__vk {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url('../../img/icons/vk-soclist.svg') no-repeat;
-}
-
-.social__fb {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url('../../img/icons/facebook-soclist.svg') no-repeat;
-}
-
-.social__inst {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url('../../img/icons/instagram-soclist.svg') no-repeat;
-}
-
-.social__gplus {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url('../../img/icons/google-plus-soclist.svg') no-repeat;
 }

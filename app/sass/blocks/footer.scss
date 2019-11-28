@@ -1,0 +1,33 @@
+@import "../mixins";
+
+.footer {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #252627;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    @include list();
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-right: 25px;
+    @media screen and (max-width: 568px) {
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      @include firaRegular();
+      font-size: 13px;
+      color: #949494;
+    }
+  } 
+}

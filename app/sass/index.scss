@@ -1,5 +1,6 @@
 @import "./fonts";
 @import "./vars";
+@import "./mixins";
 
 * {
   box-sizing: border-box;
@@ -72,9 +73,6 @@ a:hover {
   visibility: hidden;
 }
 
-@import "./blocks/sidebar.scss";
-@import "./blocks/content-header.scss";
-
 /**************************** Content ****************************/
 .content {
   margin-left: 170px;
@@ -88,9 +86,6 @@ a:hover {
     margin-left: 0;
   }
 }
-
-
-@import "./blocks/content-header.scss";
 
 /******************* Header of section *****************/
 .header_text {
@@ -120,13 +115,50 @@ a:hover {
   }
 }
 
+.social__vk {
+  @include socialIconLink();
+  background-size: 180px;
+  background-position: -7px -31px;
+}
+
+.social__fb {
+  @include socialIconLink();
+  background-size: 180px;
+  background-position: -25px -3px;
+}
+
+.social__inst {
+  @include socialIconLink();
+  background-size: 180px;
+  background-position: -82px -2px;
+}
+
+.social__gplus {
+  @include socialIconLink();
+  background-size: 180px;
+  background-position: -51px -2px;
+}
+
+// Sidebar
+@import "./blocks/sidebar.scss";
+
+// Header
+@import "./blocks/content-header.scss";
+
+// Forms of first section
 @import "./blocks/recipe-selection.scss";
 
-/******************* Main Content **********************/
+// Main Content
 @import "./blocks/first-articles.scss";
+
 // Recipe tabs
 @import "./blocks/recipe-tabs.scss";
+
 // Recipe compilation
 @import "./blocks/recipe-compilation.scss";
 
+// Subscribe section
 @import "./blocks/mail-registration.scss";
+
+// Footer
+@import "./blocks/footer.scss";

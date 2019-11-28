@@ -32,27 +32,9 @@
 
     border: none;
     background-color: #2f3032;
+    background-image: url('../../img/icons/sprites.svg');
+    background-repeat: no-repeat;
+    background-size: 210px;
+    background-position: 2px 0px;
   }
-}
-
-.footer {
-  padding: 22px 0;
-  display: flex;
-  justify-content: space-between;
-  background-color: #252627;
-  &__list {
-    @include list();
-    display: flex;
-  }
-  &__item {
-    margin-right: 25px;
-    &:last-child {
-      margin-right: 0;
-    }
-    a {
-      @include firaRegular();
-      font-size: 13px;
-      color: #949494;
-    }
-  } 
 }
