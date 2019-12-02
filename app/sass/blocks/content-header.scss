@@ -61,7 +61,7 @@
       width: 19px;
       height: 19px;
 
-      background: url('../../img/icons/sprites.svg') no-repeat;
+      background: url('../img/icons/sprites.svg') no-repeat;
       background-size: 180px;
       background-position: -43px -67px;
     }
@@ -70,7 +70,7 @@
       width: 19px;
       height: 19px;
 
-      background: url('../../img/icons/sprites.svg') no-repeat;
+      background: url('../img/icons/sprites.svg') no-repeat;
       background-size: 180px;
       background-position: -43px -39px;
     }
@@ -97,7 +97,7 @@
       width: 19px;
       height: 19px;
   
-      background-image: url('../../img/icons/sprites.svg');
+      background-image: url('../img/icons/sprites.svg');
       background-repeat: no-repeat;
       background-color: transparent;
       background-size: 180px;
@@ -108,7 +108,7 @@
       color: transparent;
       cursor: pointer;
       @media screen and (max-width: 1024px) {
-        background-image: url('../../img/icons/sprites.svg');
+        background-image: url('../img/icons/sprites.svg');
         background-position-y: -39px;
       }
     }

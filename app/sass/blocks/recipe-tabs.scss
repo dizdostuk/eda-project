@@ -10,11 +10,11 @@
     background-color: #f1f1f1;
 
     display: flex;
+    justify-content: space-around;
     border-radius: 15px;
   }
   &__btn {
     @media screen and (max-width: 568px) {
-      padding: 5px 15px;
       font-size: 12px;
     }
     padding: 10px 25px;
