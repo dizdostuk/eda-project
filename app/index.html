@@ -205,9 +205,9 @@
                         <ul class="first-content__list first-content--active">
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec1.jpg" alt="New recipe">
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec1.jpg" alt="New recipe">
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -240,9 +240,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec2.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec2.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -274,9 +274,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec3.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec3.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -306,9 +306,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec4.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec4.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -341,9 +341,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec5.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec5.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -376,9 +376,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec6.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec6.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -410,9 +410,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec7.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec7.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -442,9 +442,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec8.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec8.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -477,9 +477,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec9.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec9.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -509,9 +509,9 @@
                             </li>
                             <li class="first-content__item">
                                 <a href="#" class="recipe__img__link">
-                                    <picture>
-                                        <img src="./img/@2x/newrec10.jpg" alt="New recipe">                                    
-                                    </picture>
+                                    
+                                    <img src="./img/@2x/newrec10.jpg" alt="New recipe">                                    
+                                    
                                     
                                     <p class="recipe__author">
                                         <img src="./img/author.png" alt="Автор рецепта">
@@ -650,22 +650,6 @@
         </main>
     </div>
 
-    <script>
-        let sidebar = document.querySelector('.sidebar');
-        let button = document.querySelector('.menu__btn');
-        let tabBtns = document.querySelectorAll('.tabs__btn');
-
-        tabBtns.forEach((i) => {
-            i.addEventListener('click', () => {
-                prev.classList.remove('tabs__btn--active');
-                i.classList.add('tabs__btn--active');
-            });
-            prev = i;
-        })
-
-        button.onclick = () => {
-            sidebar.classList.toggle('sidebar--x0');
-        }
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
